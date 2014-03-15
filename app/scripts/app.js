@@ -25,6 +25,10 @@ angular.module('facetiousGraphGeneratorApp', [
         controller: 'SettingsCtrl',
         authenticate: true
       })
+      .when('/step/:id', {
+        templateUrl: 'partials/steps',
+        controller: 'StepsCtrl',
+      })
       .otherwise({
         redirectTo: '/'
       });
