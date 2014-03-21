@@ -15,5 +15,5 @@ angular.module('facetiousGraphGeneratorApp')
           id:'me'
         }
       }
-	  });
+    });
   });
