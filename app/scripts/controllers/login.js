@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('facetiousGraphGeneratorApp')
+angular.module('fggApp')
   .controller('LoginCtrl', function ($scope, Auth, $location) {
     $scope.user = {};
     $scope.errors = {};

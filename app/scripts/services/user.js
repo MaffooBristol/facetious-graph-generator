@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('facetiousGraphGeneratorApp')
+angular.module('fggApp')
   .factory('User', function ($resource) {
     return $resource('/api/users/:id', {
       id: '@id'

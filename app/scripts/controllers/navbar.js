@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('facetiousGraphGeneratorApp')
+angular.module('fggApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
     $scope.menu = [{
       'title': 'Home',

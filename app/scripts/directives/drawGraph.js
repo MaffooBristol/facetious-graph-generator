@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('facetiousGraphGeneratorApp')
+angular.module('fggApp')
   .directive('piechart', function() {
     return {
       link: function(scope, element, attrs) {

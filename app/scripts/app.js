@@ -1,6 +1,6 @@
 'use strict';
 var x = 123;
-angular.module('facetiousGraphGeneratorApp', [
+angular.module('fggApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',

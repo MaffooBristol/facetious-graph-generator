@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('facetiousGraphGeneratorApp')
+angular.module('fggApp')
 
   /**
    * Removes server error when user updates input

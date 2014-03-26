@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('facetiousGraphGeneratorApp')
+angular.module('fggApp')
   .factory('Session', function ($resource) {
     return $resource('/api/session/');
   });
