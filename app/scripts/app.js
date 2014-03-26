@@ -1,5 +1,5 @@
 'use strict';
-
+var x = 123;
 angular.module('facetiousGraphGeneratorApp', [
   'ngCookies',
   'ngResource',
