@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('facetiousGraphGeneratorApp'));
+  beforeEach(module('fccApp'));
 
   var MainCtrl,
     scope,
@@ -12,17 +12,20 @@ describe('Controller: MainCtrl', function () {
   // Initialize the controller and a mock scope
   beforeEach(inject(function (_$httpBackend_, $controller, $rootScope) {
     $httpBackend = _$httpBackend_;
-    $httpBackend.expectGET('/api/awesomeThings')
-      .respond(['HTML5 Boilerplate', 'AngularJS', 'Karma', 'Express']);
     scope = $rootScope.$new();
     MainCtrl = $controller('MainCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings).toBeUndefined();
-    $httpBackend.flush();
-    expect(scope.awesomeThings.length).toBe(4);
+});
+
+describe('filter', function () {
+  beforeEach(module('fccApp'));
+
+  describe('uppercase', function () {
+    it('should make it uppercase', inject(function (_filter) {
+      expect(_filter('abcde')).toEqual('edcba');
+    }));
   });
 });
